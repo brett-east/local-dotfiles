@@ -1,0 +1,16 @@
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	pu = push -u origin
+	pr = pull --rebase
+	up = fetch && git rebase -i origin/master
+	cam = commit -am
+	cav = commit -av
+[user]
+	name = Brett East
+	email = brett@playdraft.com
+[core]
+	editor = /usr/local/bin/vim

@@ -1,5 +1,6 @@
 [alias]
 	co = checkout
+  ci = commit
 	st = status
 	br = branch
 	unstage = reset HEAD --
@@ -11,6 +12,6 @@
 	cav = commit -av
 [user]
 	name = Brett East
-	email = brett@playdraft.com
+	email = brett@sproutback.com
 [core]
-	editor = /usr/local/bin/vim
+	editor = /usr/bin/vim

@@ -40,3 +40,6 @@ eval $(minikube docker-env)
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export GITHUB_TOKEN=e6592a99ff1e4f67e276db18e9d7d55527f90737
+export GOPRIVATE=github.com/the-infatuation

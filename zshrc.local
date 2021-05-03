@@ -91,11 +91,12 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-alias gfrm='git fetch && git rebase -i origin/master'
+alias gfrm='git fetch && git rebase -i origin/main'
 alias gfrd='git fetch && git rebase -i origin/development'
 alias k='kubectl'
 alias gc='gcloud'
-alias ggone='git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done'
+alias ggone='git fetch -p && for branch in $(git branch -vv | grep ': gone]' |
+  awk '{print $1}'); do git branch -D $branch; done;'
 
 # set GOPATH
 export GOPATH="$HOME/go"
